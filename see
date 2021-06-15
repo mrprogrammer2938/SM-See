@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+import os
+import time
+import sys
+def start():
+    if sys.argv[1] == sys.argv[1]:
+      a = open(sys.argv[1])
+      print(a.read())
+    elif sys.argv[1] == sys.argv[2]:
+        os.system("cat " + sys.argv[1] + sys.argv[2] + sys.argv[3])
+    else:
+        print("read [File...]")
+def starthelp():
+    print("""
+read [File...]
+""")
+if __name__ == '__main__':
+  try:
+     start()
+  except IndexError:
+      starthelp()
